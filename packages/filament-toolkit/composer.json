@@ -20,7 +20,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Anish\\FilamentToolkit\\FilamentToolkitServiceProvider"
+                "Anish\\FilamentToolkit\\FilamentToolkitServiceProvider",
+                "Anish\\FilamentToolkit\\AdminPanelProvider"
             ]
         }
     }
