@@ -10,7 +10,7 @@
 
  <div
  ax-load
-        ax-load-src="{{ FilamentAsset::getAlpineComponentSrc('') }}"
+        ax-load-src="{{ FilamentAsset::getAlpineComponentSrc('color-picker', 'anish/filament-toolkit') }}"  
         x-ignore
         x-data="colorPicker({ state: $wire.entangle('{{ $getStatePath() }}'), width: @js($width) })"
  >
