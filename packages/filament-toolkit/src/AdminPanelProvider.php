@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers\Filament;
+namespace Anish\FilamentToolkit;
 
 use Filament\Pages;
 use Filament\Panel;
@@ -10,7 +10,6 @@ use Filament\Support\Colors\Color;
 use Filament\Http\Middleware\Authenticate;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-use Anish\FilamentToolkit\Resources\UserResource;
 use Filament\Http\Middleware\AuthenticateSession;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
@@ -32,9 +31,7 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
-            ->resources([
-                UserResource::class,
-            ])
+            ->plugin(Toolkit::make())
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Pages\Dashboard::class,

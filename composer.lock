@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "anish/filament-toolkit",
-            "version": "dev-plugin",
+            "version": "dev-implementmyplugin",
             "dist": {
                 "type": "path",
                 "url": "packages/filament-toolkit",
-                "reference": "45027e494a209e36d6c44152d5a64b521101843e"
+                "reference": "cabb1cf6c0a6448a7cfc8be8ad6ce3025c126dd5"
             },
             "require": {
                 "filament/support": "^3.0"
@@ -21,7 +21,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Anish\\FilamentToolkit\\FilamentToolkitServiceProvider"
+                        "Anish\\FilamentToolkit\\FilamentToolkitServiceProvider",
+                        "Anish\\FilamentToolkit\\AdminPanelProvider"
                     ]
                 }
             },
