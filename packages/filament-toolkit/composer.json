@@ -1,0 +1,27 @@
+{
+    "name": "anish/filament-toolkit",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Anish\\FilamentToolkit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "anishregmi17",
+            "email": "anishregminaglibang@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "filament/support": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anish\\FilamentToolkit\\FilamentToolkitServiceProvider"
+            ]
+        }
+    }
+}
