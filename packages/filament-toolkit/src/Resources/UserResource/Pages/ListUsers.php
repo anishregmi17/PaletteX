@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Pages;
+namespace Anish\FilamentToolkit\Resources\UserResource\Pages;
 
-use App\Filament\Resources\UserResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Anish\FilamentToolkit\Resources\UserResource;
 
 class ListUsers extends ListRecords
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace Anish\FilamentToolkit\Resources;
 
-use App\Filament\Resources\UserResource\Pages;
+use Anish\FilamentToolkit\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
