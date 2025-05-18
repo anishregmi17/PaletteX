@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Pages;
+namespace Anish\FilamentToolkit\Resources\UserResource\Pages;
 
-use App\Filament\Resources\UserResource;
-use Filament\Actions;
+use Anish\FilamentToolkit\Resources\UserResource;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateUser extends CreateRecord
